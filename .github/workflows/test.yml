@@ -12,10 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # .github/workflows/test.yml
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"   # ← change from 3.11 to 3.12
 
       - name: Install dependencies
         run: |
